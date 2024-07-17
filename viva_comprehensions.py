@@ -48,7 +48,7 @@ def gen_set(val_in: str) -> Set:
     :param val_in:
     :return:
     """
-    return set(char for char in val_in.upper() if char.isalpha() and not char.isupper())
+    return set(char.upper() for char in val_in if char.islower())
 
 
 gen_set('Mississippi')
